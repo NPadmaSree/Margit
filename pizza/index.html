@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Order Pizza</title>
+  </head>
+  <body>
+    <h2>Pizza Order</h2>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col1">
+            <label for="name"> Customer's Name</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="name" placeholder="Your name.." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="size">Size of pizza</label>
+          </div>
+        </div>
+        <div>
+          <input type="radio" id="radio1" value="pfor2">
+          <label for="pfor2">For 2, the price is 7,50€</label>
+        </div><br />
+
+          <div>
+            <input type="radio" id="radio2" value="pfor4" />
+            <label for="pfor4">For 4, the price is 10,50€</label>
+          </div><br>
+          <div>
+            <input type="radio" id="radio3" value="pfor6" />
+            <label for="pfor6">For 6, the price is 12,50€</label>
+          </div><br>
+          <div>
+            <input type="radio" id="radio4" value="pfor8" />
+            <label for="pfor8">For 8, the price is 15,50€</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="toppings">Toppings</label>
+          </div>
+          <div class="col2">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
