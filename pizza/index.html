@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Order Pizza</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2>Pizza Order</h2>
@@ -11,7 +12,7 @@
           <div class="col1">
             <label for="name"> Customer's Name</label>
           </div>
-          <div class="col2">
+          <div class="col1">
             <input type="text" id="name" placeholder="Your name.." />
           </div>
         </div>
@@ -19,21 +20,14 @@
           <div class="col1">
             <label for="size">Size of pizza</label>
           </div>
-        </div>
-        <div>
-          <input type="radio" id="radio1" value="pfor2">
-          <label for="pfor2">For 2, the price is 7,50€</label>
-        </div><br />
 
-          <div>
+          <div class="col2">
+            <input type="radio" id="radio1" value="pfor2" />
+            <label for="pfor2">For 2, the price is 7,50€</label><br />
             <input type="radio" id="radio2" value="pfor4" />
-            <label for="pfor4">For 4, the price is 10,50€</label>
-          </div><br>
-          <div>
+            <label for="pfor4">For 4, the price is 10,50€</label><br />
             <input type="radio" id="radio3" value="pfor6" />
-            <label for="pfor6">For 6, the price is 12,50€</label>
-          </div><br>
-          <div>
+            <label for="pfor6">For 6, the price is 12,50€</label><br />
             <input type="radio" id="radio4" value="pfor8" />
             <label for="pfor8">For 8, the price is 15,50€</label>
           </div>
@@ -43,10 +37,37 @@
             <label for="toppings">Toppings</label>
           </div>
           <div class="col2">
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
+            <input type="checkbox" id="herbs" value="herbs" />
+            <label for="herbs">Herbs</label><br />
+            <input type="checkbox" id="extra_cheese" value="extra_cheese" />
+            <label for="exrtra_cheese">Cheese</label> <br />
+            <input type="checkbox" id="pineapple" value="pineapple" />
+            <label for="pineapple">Pineapple</label><br />
+            <input type="checkbox" id="peppers" value="peppers" />
+            <label for="peppers">Peppers</label><br />
+            <input type="checkbox" id="mushrooms" value="mushrooms" />
+            <label for="mushrooms">Mushrooms</label><br />
+            <input type="checkbox" id="chicken" value="chicken" />
+            <label for="chicken">Chicken</label> <br />
+            <input type="checkbox" id="salami" value="salai" />
+            <label for="salami">Salami</label> <br />
+            <input type="checkbox" id="red_onions" value="red_onions" />
+            <label for="red_onions">Red Onions</label><br />
+            <input type="checkbox" id="bacon" value="bacon" />
+            <label for="bacon"> Bacon</label><br />
+            <input type="checkbox" id="olives" value="olives" />
+            <label for="olives"> Olives</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="delivery">Delivery Options</label>
+          </div>
+          <div class="col2">
+            <select name="delivery" id="delivery" form="delivery">
+              <option value="home">Delivery Home</option>
+              <option value="eat_in">Eat in</option>
+              <option value="pickup">Pickup food</option>
             </select>
           </div>
         </div>
@@ -56,6 +77,7 @@
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
 <!-- A test comment -->
