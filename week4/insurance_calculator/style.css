@@ -80,9 +80,10 @@ span {
 }
 #output {
   padding: 20px;
-  border: 5px solid rgb(123, 115, 115);
+  /* border: 2px solid rgb(123, 115, 115); */
   margin: auto;
   text-align: center;
-  background-color: orange;
-  color: white;
+  /* background-color: rgb(255, 102, 0);
+  color: white; */
+  width: 100%;
 }

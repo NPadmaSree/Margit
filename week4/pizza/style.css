@@ -24,7 +24,7 @@ label {
   display: inline-block;
 }
 
-input[type="submit"] {
+button {
   background-color: orangered;
   color: white;
   padding: 12px 20px;
@@ -34,7 +34,7 @@ input[type="submit"] {
   align-content: center;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: orange;
 }
 

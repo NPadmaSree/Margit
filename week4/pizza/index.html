@@ -22,76 +22,94 @@
           </div>
 
           <div class="col2">
-            <form>
-              <input type="radio" id="rad1" value="pfor2" name="size" />
-              <label for="pfor2">For 2, the price is 7,50€</label><br />
-              <input type="radio" id="rad2" value="pfor4" name="size" />
-              <label for="pfor4">For 4, the price is 10,50€</label><br />
-              <input type="radio" id="rad3" value="pfor6" name="size" />
-              <label for="pfor6">For 6, the price is 12,50€</label><br />
-              <input type="radio" id="rad4" value="pfor8" name="size" />
-              <label for="pfor8">For 8, the price is 15,50€</label>
-            </form>
+            <input type="radio" id="rad1" value="two" name="size" />
+            <label for="pfor2">For 2, the price is 7,50€</label><br />
+            <input type="radio" id="rad2" value="four" name="size" />
+            <label for="pfor4">For 4, the price is 10,50€</label><br />
+            <input type="radio" id="rad3" value="six" name="size" />
+            <label for="pfor6">For 6, the price is 12,50€</label><br />
+            <input type="radio" id="rad4" value="eight" name="size" />
+            <label for="pfor8">For 8, the price is 15,50€</label>
           </div>
         </div>
         <div class="row">
           <div class="col1">
             <label for="toppings">Toppings</label>
             <p>
-              The first 4 toppings are free, for additional toppings price is
-              0.5€ each
+              (The first 4 toppings are free, for additional toppings price is
+              0.5€ each)
             </p>
           </div>
           <div class="col2">
-            <input type="checkbox" id="herbs" value="herbs" name="toppings" />
+            <input
+              type="checkbox"
+              id="topping1"
+              value="herbs"
+              name="toppings"
+            />
             <label for="herbs">Herbs</label><br />
             <input
               type="checkbox"
-              id="extra_cheese"
+              id="topping2"
               value="extra_cheese"
               name="toppings"
             />
-            <label for="exrtra_cheese">Cheese</label> <br />
+            <label for="exrtra_cheese">Extra Cheese</label> <br />
             <input
               type="checkbox"
-              id="pineapple"
+              id="topping3"
               value="pineapple"
               name="toppings"
             />
             <label for="pineapple">Pineapple</label><br />
             <input
               type="checkbox"
-              id="peppers"
+              id="topping4"
               value="peppers"
               name="toppings"
             />
             <label for="peppers">Peppers</label><br />
             <input
               type="checkbox"
-              id="mushrooms"
+              id="topping5"
               value="mushrooms"
               name="toppings"
             />
             <label for="mushrooms">Mushrooms</label><br />
             <input
               type="checkbox"
-              id="chicken"
+              id="topping6"
               value="chicken"
               name="toppings"
             />
             <label for="chicken">Chicken</label> <br />
-            <input type="checkbox" id="salami" value="salai" name="toppings" />
+            <input
+              type="checkbox"
+              id="topping7"
+              value="salami"
+              name="toppings"
+            />
             <label for="salami">Salami</label> <br />
             <input
               type="checkbox"
-              id="red_onions"
+              id="topping8"
               value="red_onions"
               name="toppings"
             />
             <label for="red_onions">Red Onions</label><br />
-            <input type="checkbox" id="bacon" value="bacon" name="toppings" />
+            <input
+              type="checkbox"
+              id="topping9"
+              value="bacon"
+              name="toppings"
+            />
             <label for="bacon"> Bacon</label><br />
-            <input type="checkbox" id="olives" value="olives" name="toppings" />
+            <input
+              type="checkbox"
+              id="topping10"
+              value="olives"
+              name="toppings"
+            />
             <label for="olives"> Olives</label>
           </div>
         </div>
@@ -100,7 +118,7 @@
             <label for="delivery">Delivery Options</label>
           </div>
           <div class="col2">
-            <select name="delivery" id="delivery" form="delivery">
+            <select name="delivery" id="delivery">
               <option value="home">Delivery Home ,+5€</option>
               <option value="eat_in">Eat in</option>
               <option value="pickup">Pickup food</option>
@@ -109,7 +127,10 @@
         </div>
 
         <div class="row">
-          <input type="submit" value="Order Pizza" id="btn" />
+          <button type="submit">Order Pizza</button>
+        </div>
+        <div id="output">
+          <p id="order"></p>
         </div>
       </form>
     </div>

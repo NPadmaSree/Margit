@@ -37,7 +37,7 @@ const inscal = (event) => {
     }
   });
   amount += amount * 0.01 * increase;
-  calculate.textContent = `Dear ${customerName}, of age ${customerAge}, your insurance amount is: ${amount}`;
+  calculate.textContent = `Dear ${customerName}, of age ${customerAge}, your risk score is: ${amount}`;
   form.reset();
 };
 
