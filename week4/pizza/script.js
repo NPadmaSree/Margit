@@ -6,6 +6,7 @@ const delivery = document.querySelector("#delivery");
 const order = document.querySelector("#order");
 
 const takeOrder = (event) => {
+  event.preventDefault();
   let customerName = customer.value;
   let sizeResult = "";
   let toppingsResult = [];
@@ -52,9 +53,9 @@ const takeOrder = (event) => {
     ", "
   )}and delivery method is: ${deliveryResult}. Total price is: ${price} €.`;
 
-  order.style["boxShadow"] = "0 0 5px #999999";
-  order.style["border"] = "1px solid #eee";
-
+  //order.style["boxShadow"] = "0 0 5px #999999";
+  //order.style["border"] = "1px solid #eee";
+  document.querySelector("#output").style.padding = "1rem";
   form.reset();
 };
 
