@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Car Database</title>
+  </head>
+  <body>
+   
+    <section class="dataentry">
+      <div class="insert_cardata">
+        <h2>Insert car data</h2>
+        <form id="add_car">
+          <div>
+            <label for="licence">Licence number</label>
+            <input type="text" name="licence" id="licence" />
+          </div>
+          <div>
+            <label for="maker">Car maker</label>
+            <input type="text" name="maker" id="maker" />
+          </div>
+          <div>
+            <label for="model">Car model</label>
+            <input type="text" name="model" id="model" />
+          </div>
+          <div>
+            <label for="owner">Car owner</label>
+            <input type="text" name="owner" id="owner" />
+          </div>
+          <div>
+            <label for="price">Car price</label>
+            <input type="text" name="price" id="price" />
+          </div>
+          <div>
+            <label for="color">Car color</label>
+            <input type="text" name="color" id="color" />
+          </div>
+          <div class="buttons">
+            <button type="submit">Add car</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        <p id="input_error"></p>
+    </section>
+    <div class="cardata_display">
+      <h2>Car database</h2>
+        <table>
+          <thead>
+            <th>Licence</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Owner</th>
+            <th>Price</th>
+            <th>Color</th>
+          </thead>
+          <tbody id="car_table_body"></tbody>
+        </table>
+        <section class="search">
+          <div class="search_car">
+            <h2>Find a car</h2>
+            <form id="search_form">
+              <input
+                type="text"
+                placeholder="Enter licence number"
+                id="search_input"
+              />
+              <button type="submit">search</button>
+            </form>
+          </div>
+    
+          <p id="search_result"></p>
+        </section>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

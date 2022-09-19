@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
+  background-color: rgb(199, 231, 246);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0;
+}
+
+input,
+button {
+  font-family: inherit;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+button {
+  color: white;
+  background: rgb(82, 131, 229);
+  border: none;
+  padding: 1rem 2rem;
+}
+button:hover {
+  color: white;
+  background: rgb(209, 138, 7);
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  margin: 5%;
+}
+
+.content {
+  width: 50vw;
+  padding: 2rem;
+}
+
+#order {
+  width: 20vw;
+}
+
+#order {
+  position: fixed;
+  right: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.2rem;
+  width: 19vw;
+}
+span {
+  color: orangered;
+}
+.content {
+  width: 75vw;
+  padding: 2rem;
+}
+#output {
+  padding: 20px;
+  /* border: 2px solid rgb(123, 115, 115); */
+  margin: auto;
+  text-align: center;
+  /* background-color: rgb(255, 102, 0);
+  color: white; */
+  width: 100%;
+}

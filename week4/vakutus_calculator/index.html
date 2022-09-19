@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurace Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="content">
+      <h1>Insurance Calculator</h1>
+      <form>
+        <h2>Name:</h2>
+        <input type="text" placeholder="Enter you name please" id="name" />
+        <h2>Age:</h2>
+        <input type="number" placeholder="Enter you age please" id="age" />
+        <h2>Please specify your current health conditions:</h2>
+        <div>
+          <input type="checkbox" id="healthcondition1" value="hypertension" />
+          <label for="healthcondition1">Hypertension</label>
+        </div>
+        <div>
+          <input type="checkbox" id="healthcondition2" value="bloodsugar" />
+          <label for="healthcondition2">Blood Sugar</label>
+        </div>
+        <div>
+          <input type="checkbox" id="healthcondition3" value="overweight" />
+          <label for="healthcondition3">Overweight</label>
+        </div>
+        <div>
+          <input type="checkbox" id="healthcondition4" value="astma" />
+          <label for="healthcondition4">Astma</label>
+        </div>
+        <h2>Please specify your current health conditions:</h2>
+
+        <div>
+          <input type="checkbox" id="habbit1" value="bad" />
+          <label for="habbit1">Smoking</label>
+        </div>
+        <div>
+          <input type="checkbox" id="habbit2" value="bad" />
+          <label for="habbit2">Alcohol</label>
+        </div>
+        <div>
+          <input type="checkbox" id="habbit3" value="good" />
+          <label for="habbit3">Daily exercise</label>
+        </div>
+        <div>
+          <input type="checkbox" id="habbit4" value="bad" />
+          <label for="habbit4">Drugs</label>
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="output">
+        <strong><p id="calculate"></p></strong>
+      </div>
+    </div>
+    
+
+    <div class="content">
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(178, 224, 242);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section.search {
+  grid-row: 1 / 3;
+}
+.dataentry {
+  padding: 2rem;
+  display: flex;
+}
+button {
+  color: white;
+  background: grey;
+  border-radius: 10px;
+  padding: 0.75rem;
+  border-style: none;
+  margin: 1vw;
+}
+.insert_cardata {
+  width: 30vw;
+}
+.cardata_display {
+  width: 70vw;
+  padding: 0.5rem;
+  margin: 20px;
+  overflow-x: auto;
+}
+label {
+  display: inline-block;
+  width: 100px;
+  margin: 20px, 0;
+  padding: 5px;
+}
+input[type="text"] {
+  display: inline-block;
+  width: 100px;
+  margin: 20px, 0;
+  padding: 5px;
+}
+table {
+  width: 100%;
+  padding: 0.5rem;
+  display: inline-block;
+}
+th,
+td {
+  padding: 5px 30px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: azure;
+}
+th {
+  background: rgb(55, 78, 131);
+  color: white;
+}
+.search {
+  margin: 20px;
+}
+.search_car {
+  display: inline-block;
+  margin: 20px;
+  padding: 0.5rem;
+}
