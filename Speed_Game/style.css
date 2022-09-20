@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/20/21/00/peanut-truffles-1756643__480.jpg");
+  font-family: "DynaPuff", cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collect {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  margin: 3rem;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+header {
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
+.candy {
+  height: 100px;
+  width: 100px;
+
+  background: palevioletred;
+  border-radius: 50%;
+}
+#img1 {
+  background-image: url("candy1.avif");
+}
+#img1 {
+  background-image: url("dough_nut.aivf");
+}
+#img1 {
+  background-image: url("lollipop.avif");
+}
+#img1 {
+  background-image: url("fruit gelly.avif");
+}
+.btn {
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+  background: white;
+}
