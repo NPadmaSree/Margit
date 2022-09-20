@@ -10,47 +10,93 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collect {
+
+p {
+  margin: 3rem;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+h1 {
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+  font: size 40px;
+}
+h2 {
+  margin-top: 0.5rem;
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+.circles {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-p {
-  margin: 3rem;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-header {
-  margin-top: 5rem;
-  text-align: center;
-  color: white;
-  font-size: larger;
-}
-.candy {
+.circle {
   height: 100px;
   width: 100px;
 
-  background: palevioletred;
+  background: rgb(234, 161, 185);
   border-radius: 50%;
 }
-#img1 {
-  background-image: url("candy1.avif");
+#img1.active {
+  background-image: url("assets/candy1.jpg");
+  background-size: cover;
 }
-#img1 {
-  background-image: url("dough_nut.aivf");
+#img2.active {
+  background-image: url("assets/dough_nut.jpg");
+  background-size: cover;
 }
-#img1 {
-  background-image: url("lollipop.avif");
+#img3.active {
+  background-image: url("assets/lollipop.jpg");
+  background-size: cover;
 }
-#img1 {
-  background-image: url("fruit gelly.avif");
+#img4.active {
+  background-image: url("assets/fruit_gelly.jpg");
+  background-size: cover;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 .btn {
-  display: flex;
-  padding: 5px;
+  margin-top: 20px;
+  font-family: inherit;
+  padding: 0.5rem;
+  font-size: 20px;
   border-radius: 10px;
-  border-style: none;
+  border: none;
   background: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: relative;
+  background-color: antiquewhite;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.modal.close {
+  margin: 10px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hidden {
+  display: none;
 }

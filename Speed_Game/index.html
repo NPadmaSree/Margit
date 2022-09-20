@@ -17,18 +17,40 @@
     <title>Speedgame Candybar</title>
   </head>
   <body>
-    <h1>Speedgame Candybar</h1>
-    <div class="score" id="score">
-      <p id="your_score">Your score is: 0</p>
-    </div>
-    <div class="collect">
-      <i class="fa-solid fa-candy"></i>
-      <i class="fa-solid fa-candy-cane"></i>
-      <i class="fa-solid fa-lollipop"></i>
-      <i class="fa-solid fa-candy-corn"></i>
-    </div>
-    <button class="btn" id="start">Start game</button>
-    <button class="btn" id="stop">Stop game</button>
+    <main>
+      <section>
+        <h1>Speedgame Candybar</h1>
+        <div class="score" id="score">
+          <p id="your_score">
+            Candy you have collected is : <span id="result">0</span>
+          </p>
+        </div>
+        <div class="circles">
+          <div class="circle active" id="img1">1</div>
+          <div class="circle active" id="img2">2</div>
+          <div class="circle active" id="img3">3</div>
+          <div class="circle active" id="img4">4</div>
+        </div>
+
+        <!-- <div class="collect">
+        <i class="fa-solid fa-candy"></i>
+        <i class="fa-solid fa-candy-cane"></i>
+        <i class="fa-solid fa-lollipop"></i>
+        <i class="fa-solid fa-candy-corn"></i>
+      </div> -->
+        <div class="buttons">
+          <button class="btn" id="start">Start game</button>
+          <button class="btn" id="stop">Stop game</button>
+        </div>
+      </section>
+      <section class="overlay hidden">
+        <div class="modal">
+          <h2>Game Over</h2>
+          <p id="score">It,s okay collect more next time!</p>
+          <button class="close">X</button>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
