@@ -30,6 +30,7 @@ h2,
 p {
   margin-bottom: 2rem;
 }
+/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -58,7 +59,7 @@ nav ul li {
 }
 /* SECTIONS */
 section {
-  min-height: 50vh;
+  min-height: 80vh;
   scroll-margin-top: 5rem;
 }
 section:first-child,
@@ -78,10 +79,19 @@ section:last-child {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #032330d8;
+  background: #032330d8;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.overlay.visible.modal {
+  position: relative;
+  background: white;
+  min-height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  color: #032330;
+  padding: 3rem;
 }
 .modal {
   position: relative;
@@ -98,11 +108,13 @@ section:last-child {
   top: 20px;
   right: 20px;
 }
-.overlay,
-.modal,
-.close {
+.overlay {
   display: none;
 }
+.visible {
+  display: flex;
+}
+
 /* FOOTER */
 #back_to_top {
   display: none;
