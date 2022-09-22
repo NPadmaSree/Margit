@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Inter:wght@400;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -20,16 +20,14 @@
     <main>
       <section>
         <h1>Speedgame Candybar</h1>
-        <div class="score" id="score">
-          <p id="your_score">
-            Candy you have collected is : <span id="result">0</span>
-          </p>
-        </div>
+        <p id="your_score">
+          Candy you have collected : <span id="answer">0</span>
+        </p>
         <div class="circles">
-          <div class="circle active" id="img1">1</div>
-          <div class="circle active" id="img2">2</div>
-          <div class="circle active" id="img3">3</div>
-          <div class="circle active" id="img4">4</div>
+          <div class="circle active" id="img1"></div>
+          <div class="circle" id="img2"></div>
+          <div class="circle" id="img3"></div>
+          <div class="circle" id="img4"></div>
         </div>
 
         <!-- <div class="collect">
@@ -40,13 +38,17 @@
       </div> -->
         <div class="buttons">
           <button class="btn" id="start">Start game</button>
-          <button class="btn" id="stop">Stop game</button>
+          <button class="btn hidden" id="stop">Stop game</button>
         </div>
       </section>
-      <section class="overlay hidden">
+      <section class="overlay">
         <div class="modal">
-          <h2>Game Over</h2>
-          <p id="score">It,s okay collect more next time!</p>
+          <h2>Oops! Game Over</h2>
+          <p id="your_endscore">
+            It,s okay collect more next time! Candy in your bag:<span
+              id="endanswer"
+            ></span>
+          </p>
           <button class="close">X</button>
         </div>
       </section>
